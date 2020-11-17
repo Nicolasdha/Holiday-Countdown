@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    transition: all .5s ease-out;
+}
+
+body {
+    background-color: #060F1E;
+    background-image:url("/images/Thanksgiving.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+}
+
+.countdown-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -1rem;
+}
+
+header {
+    font-size: 5.5rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.container {
+    position: fixed;
+    bottom: 20%;
+    margin: 0 15px;
+}
+
+.bigtext {
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 2rem; 
+    font-weight: bold;
+}
+
+.countdown-el {
+    text-align: center;
+}
+
+.countdown-el span {
+    font-size: 1.5rem;
+}
+
+i {
+    font-size: 3rem;
+    position: fixed;
+}
+
+i#rightArrow {
+    top:50%;
+    right: 1%;
+    color: rgb(228, 226, 226);
+}
+
+i#leftArrow {
+    color: rgb(228, 226, 226);
+    top:50%;
+    left: 1%;
+}
+
+.navBackground {
+    background-color: rgba(41, 41, 41, 0.89);
+}
+
+.navBackground a {
+    text-decoration: none;
+    color: rgb(189, 189, 189);
+}
+
+.navBackground a:hover {
+    color: rgb(129, 32, 32);
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+.fixed-top {
+    position: absolute;
+}
+
+@media (max-width: 1100px) {
+    .bigtext {
+        font-size: 4rem;
+    }
+    header {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 700px){
+    .container {
+        bottom: 10%;
+    }
+}
+
+@media (max-width: 600px) {
+    .fas {
+        display: none;
+      }
+}

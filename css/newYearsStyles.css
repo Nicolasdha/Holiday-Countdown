@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    transition: all .5s ease-out;
+}
+
+body {
+    background-color: #060F1E;
+    background-image:url("/images/NewYears.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Calligraffitti', cursive;
+    min-height: 100vh;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.countdown-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -1rem;
+}
+
+.container {
+    position: fixed;
+    top: 10%;
+    right:-7%;
+}
+
+header {
+    font-size: 4.5rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.bigtext {
+    font-size: 5.5rem;
+    line-height: 1;
+    margin: 0 2rem; 
+    font-weight: bold;
+}
+
+.countdown-el {
+    text-align: center;
+}
+
+.countdown-el span {
+    font-size: 1.5rem;
+}
+
+i {
+    color: rgb(161, 161, 161);
+    font-size: 3rem;
+    position: fixed;
+}
+
+i#rightArrow {
+    top:50%;
+    right: 1%;
+}
+
+i#leftArrow {
+    top:50%;
+    left: 1%;
+}
+
+.navBackground {
+    background-color: rgba(41, 41, 41, 0.692);
+}
+
+.navBackground a {
+    text-decoration: none;
+    color: rgb(189, 189, 189);
+}
+
+.navBackground a:hover {
+    color: rgb(248, 118, 140);
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+.fixed-top {
+    position: absolute;
+}
+
+@media (max-width: 1200px) {
+    header {
+        font-size: 4rem;
+    }
+    .bigtext {
+        font-size: 4rem;
+    }
+    .container {
+        top: unset;
+        bottom: 10%;
+        right: unset
+    }  
+}
+
+@media (max-width: 750px) {
+    body {
+        background-position: -200px 0;
+    }
+}
+
+@media (max-width: 600px){
+    .fas {
+        display: none;
+      }
+}
+
+@media (max-width: 550px) {
+    .container {
+        bottom: 7%;
+    }
+}

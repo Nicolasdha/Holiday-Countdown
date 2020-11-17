@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    transition: all .5s ease-out;
+}
+
+body {
+    background-image:url("/images/Holloween.jpg");
+    background-color: #C2C7CD;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Great Vibes', cursive;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 149, 62);
+}
+
+
+.countdown-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -1rem;
+}
+
+header {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.container {
+    position: fixed;
+    top: 9%;
+    right: -9%;
+}
+
+.bigtext {
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 2rem; 
+    font-weight: bold;
+}
+
+.countdown-el {
+    text-align: center;
+}
+
+.countdown-el span {
+    font-size: 1.5rem;
+}
+
+i {
+    color: rgb(199, 199, 199);
+    font-size: 3rem;
+    position: fixed;
+}
+
+i#rightArrow {
+    top:50%;
+    right: 1%;
+}
+
+i#leftArrow {
+    top:50%;
+    left: 1%;
+}
+
+.navBackground {
+    background-color: rgba(41, 41, 41, 0.89);
+}
+
+.navBackground a {
+    text-decoration: none;
+    color: rgb(189, 189, 189);
+}
+
+.navBackground a:hover {
+    color: rgb(255, 149, 62);
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+.fixed-top {
+    position: absolute;
+}
+
+@media (max-width: 1000px) {
+    header {
+      font-size: 4.45rem;
+    }
+    .bigtext {
+        font-size: 4rem;
+    }
+    body {
+        color: rgb(245, 194, 99)
+    }
+    .container {
+        right: unset;
+    }
+}
+
+@media (max-width: 600px) {
+    .fas {
+        display: none;
+      }
+}

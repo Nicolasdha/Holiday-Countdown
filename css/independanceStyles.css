@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    transition: all .5s ease-out;
+}
+
+body {
+    background-color: #060F1E;
+    background-image:url("/images/Independance.jpg");
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    position: fixed;
+    top: 9%;
+    margin: 0 15px;
+}
+
+.countdown-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -1rem;
+}
+
+header{ 
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.bigtext {
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 2rem; 
+    font-weight: bold;
+}
+
+.countdown-el {
+    text-align: center;
+}
+
+.countdown-el span {
+    font-size: 1.5rem;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+i {
+    color: rgb(223, 223, 223);
+    font-size: 3rem;
+    position: fixed;
+}
+
+i#rightArrow {
+    top:50%;
+    right: 1%;
+}
+
+i#leftArrow {
+    top:50%;
+    left: 1%;
+}
+
+.navBackground {
+    background-color: rgba(41, 41, 41, 0.89);
+}
+
+.navBackground a {
+    text-decoration: none;
+    color: rgb(189, 189, 189);
+}
+
+.navBackground a:hover {
+    background: linear-gradient(151deg, rgba(201,26,26,1) 0%, rgba(255,255,255,1) 48%, rgba(0,1,199,1) 100%);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    background-clip: text;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+.fixed-top {
+    position: absolute;
+}
+
+@media (max-width: 800px) {
+    body {
+        background-position: -250px 0;
+    }
+    .red {
+        color: blue;
+    }
+    .blue {
+        color: red;
+    }
+    header {
+        font-size: 4rem
+    }
+    .bigtext {
+        font-size: 4rem
+    }
+}
+
+@media (max-width: 600px) {
+    .fas {
+        display: none;
+      }
+}

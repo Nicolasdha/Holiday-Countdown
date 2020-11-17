@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    transition: all .5s ease-out;
+}
+
+body {
+    background-image:url("/images/Christmas.jpg");
+    background-color: #C2C7CD;
+    background-size: cover;
+    font-family: 'Dancing Script', cursive;
+    min-height: 100vh;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -1rem;
+    color: rgb(0, 85, 14);
+}
+
+.container {
+    margin: 0 15px;
+}
+
+header {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: rgb(221, 0, 0);
+}
+
+.bigtext {
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 2rem; 
+    font-weight: bold;
+}
+
+.countdown-el {
+    text-align: center;
+}
+
+.countdown-el span {
+    font-size: 1.5rem;
+}
+
+i {
+    color: rgb(46, 46, 46);
+    font-size: 3rem;
+    position: fixed;
+}
+
+i#rightArrow {
+    top:50%;
+    right: 1%;
+}
+
+i#leftArrow {
+    top:50%;
+    left: 1%;
+}
+
+.navBackground {
+    background-color: rgba(41, 41, 41, 0.89);
+}
+
+.navBackground a {
+    text-decoration: none;
+    color: rgb(189, 189, 189);
+}
+
+.navBackground a:hover {
+    background: linear-gradient(151deg, rgba(201,26,26,1) 0%,rgb(22, 129, 8) 100%);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    background-clip: text;
+}
+
+
+h5 {
+    font-size: 2rem;
+}
+
+.fixed-top {
+    position: absolute;
+}
+
+@media (max-width: 800px) {
+    body {
+        background-position: -400px 0px;
+        background-repeat: no-repeat;
+    }
+    .countdown-container {
+        color: rgb(221, 0, 0);
+    }
+    header {
+        color: rgb(0, 85, 14);
+    }
+}
+
+@media (max-width: 600px) {
+    .fas {
+        display: none;
+      }
+}
