@@ -1,0 +1,22 @@
+{
+  "name": "holiday-countdown",
+  "version": "1.0.0",
+  "description": "Holiday countdown timer",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicolasdha/Holiday-Countdown.git"
+  },
+  "author": "Nicolas Durik-Ha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nicolasdha/Holiday-Countdown/issues"
+  },
+  "homepage": "https://Nicolasdha.github.io/Holiday-Countdown",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
