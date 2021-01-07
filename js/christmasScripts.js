@@ -1,4 +1,4 @@
-const holiday = '25 Dec 2020'
+const holiday = '25 Dec 2021'
 
 function countDown() {
     const holidayDate = new Date(holiday);
